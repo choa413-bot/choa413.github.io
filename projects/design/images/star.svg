@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 533.94 464.73">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st2 {
+        fill: #9be1d2;
+        fill-opacity: .05;
+      }
+
+      .st3 {
+        fill: #f0b6b6;
+      }
+
+      .st4 {
+        fill: #3bd0dd;
+        fill-opacity: .89;
+      }
+
+      .st5 {
+        fill: #e2ec85;
+      }
+
+      .st1 {
+        stroke: #e21b1b;
+        stroke-width: 5px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" width="533.94" height="464.73"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3">
+    <g id="Rectangle_1">
+      <rect class="st4" width="533.94" height="464.73"/>
+      <rect class="st0" width="533.94" height="464.73" data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:1.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:0.40000000596046448,&quot;g&quot;:0.40000000596046448,&quot;b&quot;:0.40000000596046448,&quot;a&quot;:1.0},&quot;position&quot;:0.71153843402862549}],&quot;transform&quot;:{&quot;m00&quot;:3.1840818908368193e-14,&quot;m01&quot;:-520.0,&quot;m02&quot;:524.0,&quot;m10&quot;:452.59259033203125,&quot;m11&quot;:2.7713305283429135e-14,&quot;m12&quot;:4.0},&quot;opacity&quot;:0.20000000298023224,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;stopsVar&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:1.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:0.40000000596046448,&quot;g&quot;:0.40000000596046448,&quot;b&quot;:0.40000000596046448,&quot;a&quot;:1.0},&quot;position&quot;:0.71153843402862549}],&quot;visible&quot;:true}"/>
+      <rect class="st1" x="2.57" y="2.57" width="528.81" height="459.59"/>
+    </g>
+    <g id="Star_2">
+      <path class="st3" d="M266.9,29.78l54.39,153.16h176.01l-142.39,94.66,54.39,153.16-142.39-94.66-142.39,94.66,54.39-153.16L36.5,182.94h176.01l54.39-153.16Z"/>
+    </g>
+    <path id="Star_1" class="st5" d="M266.9,75.1l38.66,119h125.12l-101.22,73.54,38.66,119-101.22-73.54-101.22,73.54,38.66-119-101.22-73.54h125.12l38.66-119Z"/>
+    <path id="Star_3" class="st2" d="M266.9,75.1l38.66,119h125.12l-101.22,73.54,38.66,119-101.22-73.54-101.22,73.54,38.66-119-101.22-73.54h125.12l38.66-119Z"/>
+  </g>
+</svg>
