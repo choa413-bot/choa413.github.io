@@ -1,4 +1,4 @@
-{
+*{
   box-sizing: border-box;
 }
 
@@ -54,6 +54,33 @@ body {
   height: 33.33%;
 }
 
+.scanline-photo {
+  position: absolute;
+  overflow: hidden;
+}
+
+.scanline-photo::after {
+  content: "";
+  position: absolute;
+  inset: -100% 0 0;
+  pointer-events: none;
+  opacity: 0.3;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgb(255 255 255 / 35%) 4px,
+    rgb(0 0 0 / 20%) 5px
+  );
+  animation: scanlines 5s linear infinite;
+}
+
+@keyframes scanlines {
+  to {
+    transform: translateY(50%);
+  }
+}
+
 .star {
   top: 23.7%;
   left: 30.95%;
@@ -61,6 +88,30 @@ body {
   width: 34.92%;
   height: 38.92%;
   object-fit: fill;
+}
+.star {
+  animation: star-pulse 3.5s ease-in-out infinite;
+}
+
+@keyframes star-pulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(-1deg);
+    filter:
+      drop-shadow(0 0 6px rgb(255 50 120 / 50%))
+      drop-shadow(0 0 14px rgb(255 245 100 / 35%));
+  }
+
+  50% {
+    transform: scale(1.04) rotate(1deg);
+    filter:
+      drop-shadow(0 0 14px rgb(255 50 120 / 80%))
+      drop-shadow(0 0 30px rgb(255 245 100 / 65%));
+  }
+}
+.star:hover {
+  animation-duration: 0.7s;
+  filter: saturate(1.5);
 }
 .dogbeer {
   top: 64.24%;
@@ -112,6 +163,29 @@ body {
   height: auto;
   transform: rotate(10.86deg);
 }
+
+.heart {
+  transform-origin: center;
+  animation: pixel-heartbeat 1.4s steps(2, end) infinite;
+}
+
+@keyframes pixel-heartbeat {
+  0%,
+  40%,
+  100% {
+    transform: rotate(10deg) scale(1);
+  }
+
+  15% {
+    transform: rotate(8deg) scale(1.12);
+  }
+
+  25% {
+    transform: rotate(11deg) scale(1.05);
+  }
+}
+
+
 
 .plastic-texture {
   position: absolute;
@@ -179,6 +253,33 @@ body {
     width: 23%;
     height: 20%;
   }
+
+  .cig {
+  transform: rotate(-21deg);
+}
+
+.cig:hover {
+  animation: wiggle 0.45s steps(3, end) infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-21deg) translate(0, 0);
+  }
+
+  33% {
+    transform: rotate(-17deg) translate(3px, -2px);
+  }
+
+  66% {
+    transform: rotate(-24deg) translate(-2px, 2px);
+  }
+
+  100% {
+    transform: rotate(-21deg) translate(0, 0);
+  }
+}
+}
 
   .small-photo {
     top: 77%;
