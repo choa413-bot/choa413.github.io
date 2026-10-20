@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+  background-color: #18f0ec;
+  font-family: "Pixelify Sans", sans-serif;
+  color: antiquewhite;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  /* extra bottom space so the seal never covers the footer */
+  padding: 2rem 1.25rem 12rem;
+}
+
+/* Links */
+a {
+  color: #1b1b1b;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  background: antiquewhite;
+  padding: 0.2em 0.8em;
+  border: 2px solid #1b1b1b;
+}
+
+a:hover,
+a:focus {
+  color: #ff2fd6;
+}
+
+/* Header */
+.masthead {
+  text-align: center;
+  margin: 1rem 0 2.5rem;
+}
+
+.masthead h1 {
+  font-family: "Doto", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 12vw, 6rem);
+  line-height: 1;
+  margin: 0 0 0.5rem;
+  color: #1b1b1b;
+  text-shadow: 4px 4px 0 antiquewhite;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #1b1b1b;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1b1b1b;#e32249
+  color: antiquewhite;
+  border: 3px solid antiquewhite;
+  padding: 1rem 1.5rem 1.25rem;
+  box-shadow: 6px 6px 0 #1b1b1b;;
+  transition: translate 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  translate: -3px -3px;
+  box-shadow: 9px 9px 0 #e32249;;
+}
+
+.card.wide {
+  grid-column: 1 / -1;
+}
+
+.card h2 {
+  font-family: "Doto", sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  color: #18f0ec;
+}
+
+.card p {
+  margin: 0 0 0.8rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+mark {
+  background: #18f0ec;
+  color: #1b1b1b;
+  padding: 0 0.3em;
+}
+
+hr {
+  border: none;
+  border-top: 4px dotted #1b1b1b;
+  margin: 3rem 0 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #1b1b1b;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.seal-bounce {
+  position: fixed;
+  right: 1rem;
+  bottom: 0.5rem;
+  z-index: 10;
+  width: min(220px, 40vw);
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  animation: seal-flop 2.4s ease-in-out infinite;
+}
+
+.floppy-seal {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes seal-flop {
+  0%, 100% { transform: translateY(0)     rotate(-4deg) scale(1, 1); }
+  20%      { transform: translateY(-34px) rotate(7deg)  scale(0.94, 1.1); }
+  38%      { transform: translateY(0)     rotate(-9deg) scale(1.12, 0.86); }
+  52%      { transform: translateY(-14px) rotate(4deg)  scale(1, 1); }
+  68%      { transform: translateY(0)     rotate(-3deg) scale(1.06, 0.93); }
+  85%      { transform: translateY(-4px)  rotate(2deg)  scale(1, 1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seal-bounce { animation: none; }
+  .card { transition: none; }
+}

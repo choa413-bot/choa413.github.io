@@ -1,15 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
-body{background-color: #478f67;
-font-family: "Pixelify Sans", sans-serif;
- color: antiquewhite}
-h1{font-size:30px ;
-	text-align: center}
-h2, h3
-{font-size: 15px}
-h5{font-size: 20px;
-	text-align: center
+
+body {
+  background-color: #478f67;
+  font-family: "Pixelify Sans", sans-serif;
+  color: antiquewhite;
+  line-height: 1.6;
+  margin: 0;
 }
-h6{text-align: center;
-	font-size:20px}
-p{text-align: center;
-font-size:15px}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+h1 {
+  font-family: "Doto", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.ingredients {
+  border: 3px solid antiquewhite;
+  padding: 1rem 2rem;
+  max-width: 320px;
+  margin: 1.5rem auto;
+  list-style-position: inside;
+  box-shadow: 6px 6px 0 #18f0ec;
+}
+
+.tagline,
+.facts,
+.note {
+  text-align: center;
+}
+
+.facts {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.note {
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+
+ol, ul {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+
+hr {
+  border: none;
+  border-top: 4px dotted antiquewhite;
+  margin: 2.5rem 0;
+}
+
+
+a {
+  color: antiquewhite;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.back:hover,
+.back:focus {
+  text-decoration: underline;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.image-container figure {
+  margin: 0;
+}
+
+.image-container img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 3px solid antiquewhite;
+  display: block;
+}
+
+
+
+figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+@keyframes flash {
+  0%, 49%   { color: antiquewhite; }
+  50%, 100% { color: #18f0ec; }
+}
+
+.crunch {
+  animation: flash 1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crunch { animation: none; }
+}
