@@ -11,11 +11,9 @@ body {
 .page {
   max-width: 900px;
   margin: 0 auto;
-  /* extra bottom space so the seal never covers the footer */
   padding: 2rem 1.25rem 12rem;
 }
 
-/* Links */
 a {
   color: #1b1b1b;
 }
@@ -34,7 +32,6 @@ a:focus {
   color: #ff2fd6;
 }
 
-/* Header */
 .masthead {
   text-align: center;
   margin: 1rem 0 2.5rem;
